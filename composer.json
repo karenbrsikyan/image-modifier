@@ -1,0 +1,29 @@
+{
+  "name": "karenbrsikyan/image-modifier",
+  "description": "A small image PHP service which can deliver images using a GET request",
+  "minimum-stability": "dev",
+  "config": {
+    "platform": {
+      "php": "8.1"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "ImageModifier\\": ["app/"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ImageModifier\\Tests\\": ["tests"]
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "ext-gd": "*",
+    "ext-fileinfo": "*",
+    "gumlet/php-image-resize": "2.0.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.*"
+  }
+}
